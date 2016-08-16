@@ -2,7 +2,7 @@
   "name": "ebjs",
   "version": "1.0.0",
   "description": "javascript event bus library",
-  "main": "EB.js",
+  "main": "Notify.js",
   "scripts": {
     "test": "make test"
   },
