@@ -1,0 +1,32 @@
+
+> ebjs@1.0.0 test /Users/pigeon/Documents/Programming/EBjs
+> make test
+
+./node_modules/mocha/bin/mocha  
+
+
+  test EB
+topic A with () => {}function created
+    ✓ should get topic A
+topic A with () => {}function created
+    ✓ should subscribe topic A
+topic A with (v) => {
+            assert(1 === v, 'publish method with topic A failed!');
+        }function created
+{ '0': 'A', '1': 1 }
+    ✓ should publish topic A
+undefined
+topic A with function (){}function created
+topicAremoved successfully
+    1) should unsubscribe topic A 
+
+
+  3 passing (38ms)
+  1 failing
+
+  1) test EB should unsubscribe topic A :
+     AssertionError: expected [Function: bound ] to throw an error
+      at Context.<anonymous> (test/EBTest.js:46:56)
+
+
+

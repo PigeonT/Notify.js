@@ -1,0 +1,20 @@
+{
+  "name": "ebjs",
+  "version": "1.0.0",
+  "description": "javascript event bus library",
+  "main": "EB.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "event",
+    "bus;",
+    "javascript;"
+  ],
+  "author": "pigeonT",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
