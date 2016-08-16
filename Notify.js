@@ -6,15 +6,15 @@
     }
     //es6 
     else if(typeof exports === 'object') {
-        exports['EB'] = factory()
+        exports['Notify'] = factory()
     }
     //amd
     else if(typeof define === 'function') {
-        define('EB', [], factory)
+        define('Notify', [], factory)
     }
     //normal window environment
     else {
-        root["EB"] = factory();
+        root["Notify"] = factory();
     }
     
 })(this, function(undefined) {
@@ -22,12 +22,12 @@
 
         var topics = {};
 
-        var EB = function() {
+        var Notify = function() {
             this.version = '0.0.1';
             this.auther = 'pigeonT';
         } 
         
-        EB.prototype = {
+        Notify.prototype = {
             publish : function(topic, data) {
                 if(!topics.hasOwnProperty(topic)) {
                     throw new Error('no topic ' + topic);
@@ -72,5 +72,5 @@
                 v(args.slice(1));
             }); 
         }
-        return EB;
+        return Notify;
 });
